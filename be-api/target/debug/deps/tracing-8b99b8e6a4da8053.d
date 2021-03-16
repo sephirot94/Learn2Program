@@ -1,0 +1,12 @@
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/tracing-8b99b8e6a4da8053.rmeta: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/macros.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/dispatcher.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/field.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/level_filters.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/span.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/stdlib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/subscriber.rs
+
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/tracing-8b99b8e6a4da8053.d: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/macros.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/dispatcher.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/field.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/level_filters.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/span.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/stdlib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/subscriber.rs
+
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/lib.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/macros.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/dispatcher.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/field.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/level_filters.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/span.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/stdlib.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.19/src/subscriber.rs:

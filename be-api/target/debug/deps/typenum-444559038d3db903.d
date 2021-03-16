@@ -1,0 +1,18 @@
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/typenum-444559038d3db903.rmeta: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/bit.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/int.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/marker_traits.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/operator_aliases.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/private.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/type_operators.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/uint.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/array.rs /Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/build/typenum-080bcb860ceb50f3/out/op.rs /Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/build/typenum-080bcb860ceb50f3/out/consts.rs
+
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/typenum-444559038d3db903.d: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/bit.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/int.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/marker_traits.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/operator_aliases.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/private.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/type_operators.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/uint.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/array.rs /Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/build/typenum-080bcb860ceb50f3/out/op.rs /Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/build/typenum-080bcb860ceb50f3/out/consts.rs
+
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/lib.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/bit.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/int.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/marker_traits.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/operator_aliases.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/private.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/type_operators.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/uint.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/typenum-1.12.0/src/array.rs:
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/build/typenum-080bcb860ceb50f3/out/op.rs:
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/build/typenum-080bcb860ceb50f3/out/consts.rs:
+
+# env-dep:TYPENUM_BUILD_CONSTS=/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/build/typenum-080bcb860ceb50f3/out/consts.rs
+# env-dep:TYPENUM_BUILD_OP=/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/build/typenum-080bcb860ceb50f3/out/op.rs

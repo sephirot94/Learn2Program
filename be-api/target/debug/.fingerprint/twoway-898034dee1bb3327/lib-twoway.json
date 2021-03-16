@@ -1,0 +1,1 @@
+{"rustc":16180701407609869994,"features":"[\"default\", \"use_std\"]","target":14240349223802503086,"profile":16668067249205866872,"path":869816496691624744,"deps":[[6880116618428842180,"memchr",false,15009351009860980636]],"local":[{"CheckDepInfo":{"dep_info":"debug/.fingerprint/twoway-898034dee1bb3327/dep-lib-twoway"}}],"rustflags":[],"metadata":3066953075825381375,"config":0}

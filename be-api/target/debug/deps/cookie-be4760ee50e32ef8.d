@@ -1,0 +1,12 @@
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/cookie-be4760ee50e32ef8.rmeta: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/builder.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/parse.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/jar.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/delta.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/draft.rs
+
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/libcookie-be4760ee50e32ef8.rlib: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/builder.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/parse.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/jar.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/delta.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/draft.rs
+
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/cookie-be4760ee50e32ef8.d: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/builder.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/parse.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/jar.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/delta.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/draft.rs
+
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/lib.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/builder.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/parse.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/jar.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/delta.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie-0.11.3/src/draft.rs:

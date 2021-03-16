@@ -1,0 +1,13 @@
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/net2-3c8797dff61d96f0.rmeta: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/tcp.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/udp.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/socket.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/ext.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/utils.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/sys/unix/mod.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/sys/unix/impls.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/unix.rs
+
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/net2-3c8797dff61d96f0.d: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/tcp.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/udp.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/socket.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/ext.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/utils.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/sys/unix/mod.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/sys/unix/impls.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/unix.rs
+
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/lib.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/tcp.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/udp.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/socket.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/ext.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/utils.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/sys/unix/mod.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/sys/unix/impls.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/net2-0.2.35/src/unix.rs:

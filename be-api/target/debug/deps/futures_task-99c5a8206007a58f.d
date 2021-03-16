@@ -1,0 +1,11 @@
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/futures_task-99c5a8206007a58f.rmeta: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/spawn.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/future_obj.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/noop_waker.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/arc_wake.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/waker.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/waker_ref.rs
+
+/Users/ijinkus/Documents/facultad/Learn2Program/be-api/target/debug/deps/futures_task-99c5a8206007a58f.d: /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/lib.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/spawn.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/future_obj.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/noop_waker.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/arc_wake.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/waker.rs /Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/waker_ref.rs
+
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/lib.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/spawn.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/future_obj.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/noop_waker.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/arc_wake.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/waker.rs:
+/Users/ijinkus/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-task-0.3.5/src/waker_ref.rs:
