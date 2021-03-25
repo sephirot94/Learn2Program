@@ -9,6 +9,6 @@ const Login = (user, pass) => {
     return api.post('/login', body);
 };
 
-const LoginApi = {};
+const LoginApi = { Login };
 
 export default LoginApi;

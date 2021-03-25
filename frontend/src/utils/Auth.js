@@ -1,3 +1,5 @@
+import {sha1} from 'react-native-sha1'
+
 const LOGGED_USER_KEY = 'loggedUser';
 
 /* ------------------------------------- Private ------------------------------------- */
@@ -9,11 +11,10 @@ function sessionExpired(timestamp) {
 const Auth = {
 
   hashPassword(password) {
-    
-  }
+    return sha1(password);
+  },
 
   logUserIn(user) {
-    // HERE GOES CALL TO API LOGIN
     this.isAuthenticated = true;
     return localStorage.setItem(LOGGED_USER_KEY, JSON.stringify(user));
   },

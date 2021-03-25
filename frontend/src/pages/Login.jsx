@@ -18,15 +18,13 @@ const Login = (props) => {
   const handleSubmit = (values) => {
     setLoading(true);
 
-    FuryApi.createSession(values)
+    LoginApi.Login(values)
       .then((session) => {
         const user = {
           ...session.data,
           username: values.username.toLowerCase()
         };
-        furySession(values.username.toLowerCase(), session.data);
         Auth.logUserIn(user);
-        history.replace(from);
       })
       .catch((loginError) => {
         if (loginError.response) {
@@ -51,7 +49,6 @@ const Login = (props) => {
             filter: 'opacity(0.3) grayscale(1)'
           }}
         >
-          <img alt="" className="logo invert" src={cclogo} />
         </div>
       </Space>
       <Container>
