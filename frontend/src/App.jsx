@@ -15,6 +15,10 @@ const App = ({ selectedAccount, fullAccount, availableAccounts, loadingAccounts,
 
         <Route exact path="/login">
           <Login />
+        </Route>  
+
+        <Route exact path="/register">
+          <Login />
         </Route>        
 
         <PrivateRoute>

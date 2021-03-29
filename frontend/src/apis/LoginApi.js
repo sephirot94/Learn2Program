@@ -1,10 +1,10 @@
 import {Learn2Program as api} from '../apis/clients'
 import Auth from '../utils/Auth'
 
-const Login = (user, pass) => {
+const Login = (username, password) => {
     body = {
-        "username" : user,
-        "password" : Auth.hashPassword(pass)
+        "username" : username,
+        "password" : Auth.hashPassword(password)
     }
     return api.post('/login', body);
 };

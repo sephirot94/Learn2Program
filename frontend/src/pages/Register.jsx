@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Input, Button, message, Form, Space } from 'antd';
 import { useHistory, useLocation } from 'react-router-dom';
-import {Link} from 'react-router'
-import Auth from '../utils/Auth';
-import LoginContainer from '../components/LoginContainer';
 import Container from '../components/Container';
-import LoginApi from '../apis/LoginApi'
+import LoginApi from '../apis/RegisterApi'
+import RegisterApi from '../apis/RegisterApi';
 
-const Login = (props) => {
+const Register = (props) => {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
   const location = useLocation();
@@ -18,7 +16,7 @@ const Login = (props) => {
   const handleSubmit = (values) => {
     setLoading(true);
 
-    LoginApi.Login(values)
+    RegisterApi.Register(values)
       .then((session) => {
         const user = {
           ...session.data,
@@ -28,7 +26,7 @@ const Login = (props) => {
       })
       .catch((loginError) => {
         if (loginError.response) {
-          message.error('invalid username or password');
+          message.error('Invalid username or password');
         } else if (loginError.request) {
           message.error(loginError.message);
         }
@@ -41,7 +39,7 @@ const Login = (props) => {
   };
 
   return (
-    <LoginContainer>
+    <Container>
       <Space style={{ width: '100%', marginBottom: 32 }} direction="vertical" align="center">
         <div
           style={{
@@ -64,6 +62,15 @@ const Login = (props) => {
               />
             </Form.Item>
             <Form.Item
+              name="email"
+              rules={[{ required: true, message: 'Please input your email!' }]}
+            >
+              <Input.Password
+                prefix={<LockOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
+                placeholder="Email"
+              />
+            </Form.Item>
+            <Form.Item
               name="password"
               rules={[{ required: true, message: 'Please input your password!' }]}
             >
@@ -72,11 +79,15 @@ const Login = (props) => {
                 placeholder="Password"
               />
             </Form.Item>
-            <Space>
-              <Link to='/register'>
-                Crear nuevo usuario
-              </Link>
-            </Space>
+            <Form.Item
+              name="confirm_password"
+              rules={[{ required: true, message: 'Please input your password!' }]}
+            >
+              <Input.Password
+                prefix={<LockOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
+                placeholder="Confirm password"
+              />
+            </Form.Item>
 
             <Button
               type="primary"
@@ -84,13 +95,13 @@ const Login = (props) => {
               className="login-form-button"
               loading={loading}
             >
-              Log in
+              Submit
             </Button>
           </Form>
         </div>
       </Container>
-    </LoginContainer>
+    </Container>
   );
 };
 
-export default Login;
+export default Register;
