@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Input, Button, message, Form, Space } from 'antd';
 import { useHistory, useLocation } from 'react-router-dom';
-import {Link} from 'react-router'
+import { Link } from 'react-router-dom'
 import Auth from '../utils/Auth';
 import LoginContainer from '../components/LoginContainer';
 import Container from '../components/Container';

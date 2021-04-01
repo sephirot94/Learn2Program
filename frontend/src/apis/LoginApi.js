@@ -2,7 +2,7 @@ import {Learn2Program as api} from '../apis/clients'
 import Auth from '../utils/Auth'
 
 const Login = (username, password) => {
-    body = {
+    const body = {
         "username" : username,
         "password" : Auth.hashPassword(password)
     }

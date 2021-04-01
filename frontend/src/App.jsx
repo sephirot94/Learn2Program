@@ -11,7 +11,7 @@ const App = ({ selectedAccount, fullAccount, availableAccounts, loadingAccounts,
   return (
     <BrowserRouter>
       <Switch className="switch-wrapper">
-        <Redirect exact from="/" to="home" />
+        <Redirect exact from="/" to="/home" />
 
         <Route exact path="/login">
           <Login />
@@ -21,7 +21,7 @@ const App = ({ selectedAccount, fullAccount, availableAccounts, loadingAccounts,
           <Login />
         </Route>        
 
-        <PrivateRoute>
+        <PrivateRoute exact path="/home">
           <Home />
         </PrivateRoute>
 
