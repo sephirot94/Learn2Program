@@ -2,7 +2,7 @@ import {Learn2Program as api} from '../apis/clients'
 import Auth from '../utils/Auth'
 
 const Register = (values) => {
-    body = {
+    const body = {
         "username" : values.username,
         "password" : Auth.hashPassword(values.password),
         "email" : values.email

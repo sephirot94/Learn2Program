@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
+import { LockOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
 import { Input, Button, message, Form, Space } from 'antd';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation, Redirect } from 'react-router-dom';
 import Container from '../components/Container';
-import LoginApi from '../apis/RegisterApi'
+import Auth from '../utils/Auth'
 import RegisterApi from '../apis/RegisterApi';
 
 const Register = (props) => {
@@ -14,24 +14,21 @@ const Register = (props) => {
   const { from } = location.state || { from: { pathname: '/' } };
 
   const handleSubmit = (values) => {
-    setLoading(true);
-
-    RegisterApi.Register(values)
-      .then((session) => {
-        const user = {
-          ...session.data,
-          username: values.username.toLowerCase()
-        };
-        Auth.logUserIn(user);
+    console.log(values)
+    if (values.password != values.confirm_password) {
+      message.error("Passwords do not match, please confirm password")
+    }
+    else {
+      setLoading(true);
+      RegisterApi.Register(values)
+      .then(() => {
+          return <Redirect to="/login"/>
       })
-      .catch((loginError) => {
-        if (loginError.response) {
-          message.error('Invalid username or password');
-        } else if (loginError.request) {
-          message.error(loginError.message);
-        }
-        setLoading(false);
+      .catch((registerErr) => {
+        message.error(registerErr.message);
       });
+    }
+
   };
 
   const layout = {
@@ -65,8 +62,8 @@ const Register = (props) => {
               name="email"
               rules={[{ required: true, message: 'Please input your email!' }]}
             >
-              <Input.Password
-                prefix={<LockOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
+              <Input
+                prefix={<MailOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
                 placeholder="Email"
               />
             </Form.Item>

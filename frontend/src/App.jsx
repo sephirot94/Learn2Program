@@ -4,6 +4,7 @@ import Auth from './utils/Auth';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Register from './pages/Register'
 
 import './App.less';
 
@@ -18,7 +19,7 @@ const App = ({ selectedAccount, fullAccount, availableAccounts, loadingAccounts,
         </Route>  
 
         <Route exact path="/register">
-          <Login />
+          <Register />
         </Route>        
 
         <PrivateRoute exact path="/home">
