@@ -10,6 +10,15 @@ const Register = (values) => {
     return api.post('/register', body);
 };
 
-const RegisterApi = { Register };
+const RecoverPassword = (values) => {
+    const body = {
+        "username" : values.username,
+        "password" : Auth.hashPassword(values.password),
+        "email" : values.email
+    }
+    return api.post('/change_password', body);
+};
+
+const RegisterApi = { Register, RecoverPassword };
 
 export default RegisterApi;

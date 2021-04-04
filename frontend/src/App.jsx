@@ -5,10 +5,11 @@ import Auth from './utils/Auth';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register'
+import RecoverPassword from './pages/RecoverPassword.jsx'
 
 import './App.less';
 
-const App = ({ selectedAccount, fullAccount, availableAccounts, loadingAccounts, error }) => {
+const App = () => {
   return (
     <BrowserRouter>
       <Switch className="switch-wrapper">
@@ -20,19 +21,16 @@ const App = ({ selectedAccount, fullAccount, availableAccounts, loadingAccounts,
 
         <Route exact path="/register">
           <Register />
+        </Route>  
+
+         <Route exact path="/recover_password">
+          <RecoverPassword />
         </Route>        
 
         <PrivateRoute exact path="/home">
           <Home />
         </PrivateRoute>
-
-        {/* <PrivateRoute path="/404">
-          <NoMatch />
-        </PrivateRoute>
-
-        <PrivateRoute>
-          <Redirect to={{ pathname: '/404' }} />
-        </PrivateRoute> */}
+        
       </Switch>
     </BrowserRouter>
   );

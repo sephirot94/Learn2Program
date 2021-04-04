@@ -26,6 +26,9 @@ const Register = (props) => {
       })
       .catch((registerErr) => {
         message.error(registerErr.message);
+      })
+      .then( () => {
+        setLoading(false);
       });
     }
 

@@ -13,7 +13,7 @@ export default function LoginContainer({ children }) {
       </div>
       <footer className={styles.footer}>
         <Typography.Text type="secondary">
-          Created with <CoffeeOutlined /> by Ivan Jinkus and Nereo Candenas. {`${process.env.REACT_APP_VERSION}`}
+          Created with <CoffeeOutlined /> by Ivan Jinkus and Nereo Candenas
         </Typography.Text>
       </footer>
     </>

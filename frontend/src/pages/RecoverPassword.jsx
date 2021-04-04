@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Input, Button, message, Form, Space, Tabs } from 'antd';
-import { useHistory, useLocation } from 'react-router-dom';
-import { Link, Redirect } from 'react-router-dom'
-import Auth from '../utils/Auth';
-import LoginContainer from '../components/LoginContainer';
+import { LockOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
+import { Input, Button, message, Form, Space } from 'antd';
+import { useHistory, useLocation, Redirect } from 'react-router-dom';
 import Container from '../components/Container';
-import LoginApi from '../apis/LoginApi'
-import '../assets/login.css'
+import Auth from '../utils/Auth'
+import RegisterApi from '../apis/RegisterApi';
 
-const Login = (props) => {
+const Register = (props) => {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
   const location = useLocation();
@@ -17,50 +14,46 @@ const Login = (props) => {
   const { from } = location.state || { from: { pathname: '/' } };
 
   const handleSubmit = (values) => {
-    setLoading(true);
-
-    LoginApi.Login(values)
-      .then((session) => {
-        const user = {
-          ...session.data,
-          username: values.username.toLowerCase()
-        };
-        Auth.logUserIn(user);
+    console.log(values)
+    if (values.password != values.confirm_password) {
+      message.error("Passwords do not match, please confirm password");
+    }
+    else {
+      setLoading(true);
+      RegisterApi.RecoverPassword(values)
+      .then(() => {
+          return <Redirect to="/login"/>
       })
-      .catch((loginError) => {
-        if (loginError.response) {
-          message.error('invalid username or password');
-        } else if (loginError.request) {
-          message.error(loginError.message);
+      .catch((error) => {
+        if (error.status == 404) {
+            message.error("User and email do not match");
         }
+        message.error(error.message);
+      })
+      .then( () => {
         setLoading(false);
       });
-  };
+    }
 
-  const handleRedirect = () => {
-    return <Redirect to="/register" />
-  }
+  };
 
   const layout = {
     wrapperCol: { span: 24 }
   };
 
   return (
-    <LoginContainer>
+    <Container>
       <Space style={{ width: '100%', marginBottom: 32 }} direction="vertical" align="center">
         <div
           style={{
-            width: '100%',
+            width: '250px',
             filter: 'opacity(0.3) grayscale(1)'
           }}
         >
-          <h1 style={{
-            textAlign: "center"
-          }}>Learn2Program</h1>
         </div>
       </Space>
       <Container>
-        <div> 
+        <div>
           <Form {...layout} onFinish={handleSubmit} layout="vertical" requiredMark={false}>
             <Form.Item
               name="username"
@@ -72,6 +65,15 @@ const Login = (props) => {
               />
             </Form.Item>
             <Form.Item
+              name="email"
+              rules={[{ required: true, message: 'Please input your email!' }]}
+            >
+              <Input
+                prefix={<MailOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
+                placeholder="Email"
+              />
+            </Form.Item>
+            <Form.Item
               name="password"
               rules={[{ required: true, message: 'Please input your password!' }]}
             >
@@ -80,11 +82,15 @@ const Login = (props) => {
                 placeholder="Password"
               />
             </Form.Item>
-            <Space>
-              <Link to='/recover_password'>
-                Forgot your password?
-              </Link>
-            </Space>
+            <Form.Item
+              name="confirm_password"
+              rules={[{ required: true, message: 'Please input your password!' }]}
+            >
+              <Input.Password
+                prefix={<LockOutlined style={{ color: 'rgba(0,0,0,.25)' }} />}
+                placeholder="Confirm password"
+              />
+            </Form.Item>
 
             <Button
               type="primary"
@@ -92,13 +98,13 @@ const Login = (props) => {
               className="login-form-button"
               loading={loading}
             >
-              Sign in
+              Submit
             </Button>
           </Form>
         </div>
       </Container>
-    </LoginContainer>
+    </Container>
   );
 };
 
-export default Login;
+export default Register;
