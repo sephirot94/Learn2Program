@@ -4,9 +4,9 @@ import Auth from './utils/Auth';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Register from './pages/Register'
 import RecoverPassword from './pages/RecoverPassword.jsx'
 
+import 'antd/dist/antd.css';
 import './App.less';
 
 const App = () => {
@@ -17,10 +17,6 @@ const App = () => {
 
         <Route exact path="/login">
           <Login />
-        </Route>  
-
-        <Route exact path="/register">
-          <Register />
         </Route>  
 
          <Route exact path="/recover_password">

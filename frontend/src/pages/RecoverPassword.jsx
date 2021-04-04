@@ -3,10 +3,10 @@ import { LockOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
 import { Input, Button, message, Form, Space } from 'antd';
 import { useHistory, useLocation, Redirect } from 'react-router-dom';
 import Container from '../components/Container';
-import Auth from '../utils/Auth'
+import LoginContainer from '../components/LoginContainer';
 import RegisterApi from '../apis/RegisterApi';
 
-const Register = (props) => {
+const RecoverPassword = (props) => {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
   const location = useLocation();
@@ -42,14 +42,10 @@ const Register = (props) => {
   };
 
   return (
-    <Container>
+    <LoginContainer>
       <Space style={{ width: '100%', marginBottom: 32 }} direction="vertical" align="center">
-        <div
-          style={{
-            width: '250px',
-            filter: 'opacity(0.3) grayscale(1)'
-          }}
-        >
+        <div>
+          <h1 className={"title"}>Change Password</h1>
         </div>
       </Space>
       <Container>
@@ -91,20 +87,21 @@ const Register = (props) => {
                 placeholder="Confirm password"
               />
             </Form.Item>
-
-            <Button
-              type="primary"
-              htmlType="submit"
-              className="login-form-button"
-              loading={loading}
-            >
-              Submit
-            </Button>
+            <div style={{width: "100%", textAlign:"center"}}>
+              <Button
+                type="primary"
+                htmlType="submit"
+                className="login-form-button"
+                loading={loading}
+              >
+                Submit
+              </Button>
+            </div>
           </Form>
         </div>
       </Container>
-    </Container>
+    </LoginContainer>
   );
 };
 
-export default Register;
+export default RecoverPassword;

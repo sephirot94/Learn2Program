@@ -16,7 +16,7 @@ const RecoverPassword = (values) => {
         "password" : Auth.hashPassword(values.password),
         "email" : values.email
     }
-    return api.post('/change_password', body);
+    return api.post('/recover_password', body);
 };
 
 const RegisterApi = { Register, RecoverPassword };

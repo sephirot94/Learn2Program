@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { LockOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
 import { Input, Button, message, Form, Space } from 'antd';
 import { useHistory, useLocation, Redirect } from 'react-router-dom';
-import Container from '../components/Container';
-import Auth from '../utils/Auth'
-import RegisterApi from '../apis/RegisterApi';
+import Container from '../Container';
+import Auth from '../../utils/Auth'
+import RegisterApi from '../../apis/RegisterApi';
+import LoginContainer from '../LoginContainer';
 
-const Register = (props) => {
+const RegisterForm = (props) => {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
   const location = useLocation();
@@ -39,16 +40,6 @@ const Register = (props) => {
   };
 
   return (
-    <Container>
-      <Space style={{ width: '100%', marginBottom: 32 }} direction="vertical" align="center">
-        <div
-          style={{
-            width: '250px',
-            filter: 'opacity(0.3) grayscale(1)'
-          }}
-        >
-        </div>
-      </Space>
       <Container>
         <div>
           <Form {...layout} onFinish={handleSubmit} layout="vertical" requiredMark={false}>
@@ -88,20 +79,20 @@ const Register = (props) => {
                 placeholder="Confirm password"
               />
             </Form.Item>
-
-            <Button
-              type="primary"
-              htmlType="submit"
-              className="login-form-button"
-              loading={loading}
-            >
-              Submit
-            </Button>
+            <div style={{width: "100%", textAlign:"center"}}>
+              <Button
+                type="primary"
+                htmlType="submit"
+                className="login-form-button"
+                loading={loading}
+              >
+                Sign Up
+              </Button>
+            </div>
           </Form>
         </div>
       </Container>
-    </Container>
   );
 };
 
-export default Register;
+export default RegisterForm;

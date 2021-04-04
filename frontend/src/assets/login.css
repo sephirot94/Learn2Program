@@ -196,3 +196,9 @@ a {
 ::placeholder {
     color: #b3b3b3
 }
+
+
+.title {
+    size: 24px;
+    color: #1890ff;
+  }
