@@ -1,12 +1,12 @@
-import {Learn2Program as api} from '../apis/clients'
+import {Learn2Program} from '../apis/clients'
 import Auth from '../utils/Auth'
 
-const Login = (username, password) => {
+const Login = (values) => {
     const body = {
-        "username" : username,
-        "password" : Auth.hashPassword(password)
+        "username" : values.username,
+        "password" : values.password
     }
-    return api.post('/login', body);
+    return Learn2Program.post('/login', body);
 };
 
 const LoginApi = { Login };

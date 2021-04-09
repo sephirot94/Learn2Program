@@ -4,7 +4,6 @@ import { Input, Button, message, Form, Space, Tabs } from 'antd';
 import { useHistory, useLocation } from 'react-router-dom';
 import { Link, Redirect } from 'react-router-dom'
 import Auth from '../../utils/Auth';
-import LoginContainer from '../LoginContainer';
 import Container from '../Container';
 import LoginApi from '../../apis/LoginApi'
 
@@ -33,6 +32,7 @@ const LoginForm = (props) => {
         } else if (loginError.request) {
           message.error(loginError.message);
         }
+      }).then(()=>{
         setLoading(false);
       });
   };
