@@ -20,7 +20,6 @@ const LoginForm = (props) => {
 
     LoginApi.Login(values)
       .then((session) => {
-        console.log(session)
         const user = {
           username: session.data.username,
           email :   session.data.email

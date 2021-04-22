@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import { Layout, Menu, Typography } from 'antd';
 import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,13 +9,13 @@ import styles from './styles.css';
 const { Sider } = Layout;
 const { AwesomeIcon } = FontAwesomeIcon;
 
-const Sidebar = ({ collapsed, setCollapsed}) => {
+const Sidebar = () => {
   const collapse = () => {
-    localStorage.setItem('cll', JSON.stringify(!collapsed));
     setCollapsed(!collapsed);
   };
 
   const location = useLocation().pathname;
+  const [collapsed, setCollapsed] = useState(false)
 
   return (
     <Sider
@@ -56,6 +57,6 @@ const Sidebar = ({ collapsed, setCollapsed}) => {
       </div>
     </Sider>
   );
-}
+};
 
 export default Sidebar;

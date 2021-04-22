@@ -1,13 +1,13 @@
 import { Layout } from 'antd';
 import Sidebar  from '../components/Sidebar';
 import Header from '../components/Header';
-
+// import useLocalStorage from '../utils/hooks/useLocalStorage';
 
 const { Content } = Layout;
+// const [collapsed, setCollapsed] = useLocalStorage('cll', false);
 
 const Home = () => {
 
-// HERE GOES REACT CODE USING UseEffect() 
 
   return (
     <Layout hasSider style={{ minHeight: '100vh' }}>
