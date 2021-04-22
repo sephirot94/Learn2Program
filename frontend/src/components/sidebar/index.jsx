@@ -1,5 +1,5 @@
 import { Layout, Menu, Typography } from 'antd';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,7 +8,7 @@ import styles from './styles.css';
 const { Sider } = Layout;
 const { AwesomeIcon } = FontAwesomeIcon;
 
-export default function Sidebar({ collapsed, setCollapsed}) {
+const Sidebar = ({ collapsed, setCollapsed}) => {
   const collapse = () => {
     localStorage.setItem('cll', JSON.stringify(!collapsed));
     setCollapsed(!collapsed);
@@ -57,3 +57,5 @@ export default function Sidebar({ collapsed, setCollapsed}) {
     </Sider>
   );
 }
+
+export default Sidebar;

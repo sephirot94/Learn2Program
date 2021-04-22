@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { LockOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
 import { Input, Button, message, Form, Space } from 'antd';
-import { useHistory, useLocation, Redirect } from 'react-router-dom';
+import { useHistory, useLocation, Redirect, Route } from 'react-router-dom';
 import Container from '../components/Container';
 import LoginContainer from '../components/LoginContainer';
 import RegisterApi from '../apis/RegisterApi';
@@ -11,10 +11,9 @@ const RecoverPassword = (props) => {
   const history = useHistory();
   const location = useLocation();
 
-  const { from } = location.state || { from: { pathname: '/' } };
+  const { from } = location.state || { from: { pathname: '/login' } };
 
   const handleSubmit = (values) => {
-    console.log(values)
     if (values.password != values.confirm_password) {
       message.error("Passwords do not match, please confirm password");
     }
@@ -22,13 +21,16 @@ const RecoverPassword = (props) => {
       setLoading(true);
       RegisterApi.RecoverPassword(values)
       .then(() => {
-          return <Redirect to="/login"/>
+          message.success("Succesfully recovered password")
+          history.replace(from)    
       })
-      .catch((error) => {
-        if (error.status == 404) {
-            message.error("User and email do not match");
+      .catch((err) => {
+        if (err.response.status == 404) {
+            message.error("User does not exist");
         }
-        message.error(error.message);
+        else {
+            message.error(err.response.data.message);
+        }
       })
       .then( () => {
         setLoading(false);

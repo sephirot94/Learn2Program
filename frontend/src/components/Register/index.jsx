@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
 import { LockOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
-import { Input, Button, message, Form, Space } from 'antd';
-import { useHistory, useLocation, Redirect } from 'react-router-dom';
+import { Input, Button, message, Form } from 'antd';
 import Container from '../Container';
-import Auth from '../../utils/Auth'
 import RegisterApi from '../../apis/RegisterApi';
-import LoginContainer from '../LoginContainer';
 
 const RegisterForm = (props) => {
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
-  const location = useLocation();
-
-  const { from } = location.state || { from: { pathname: '/' } };
 
   const handleSubmit = (values) => {
-    console.log(values)
+
     if (values.password != values.confirm_password) {
       message.error("Passwords do not match, please confirm password")
     }
@@ -23,10 +16,15 @@ const RegisterForm = (props) => {
       setLoading(true);
       RegisterApi.Register(values)
       .then(() => {
-          return <Redirect to="/login"/>
+          message.success("User has been created")
       })
-      .catch((registerErr) => {
-        message.error(registerErr.message);
+      .catch((err) => {
+        if (err.response.status == 409){
+          message.error("username or email already taken")
+        }
+        else {
+          message.error(err.response.data.message);
+        }
       })
       .then( () => {
         setLoading(false);

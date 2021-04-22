@@ -1,4 +1,4 @@
-import {sha1} from 'sha1'
+import sha1 from 'sha1'
 
 const LOGGED_USER_KEY = 'loggedUser';
 

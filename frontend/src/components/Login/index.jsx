@@ -20,26 +20,24 @@ const LoginForm = (props) => {
 
     LoginApi.Login(values)
       .then((session) => {
+        console.log(session)
         const user = {
-          ...session.data,
-          username: values.username.toLowerCase()
+          username: session.data.username,
+          email :   session.data.email
         };
         Auth.logUserIn(user);
+        history.replace(from)
       })
-      .catch((loginError) => {
-        if (loginError.response) {
-          message.error('invalid username or password');
-        } else if (loginError.request) {
-          message.error(loginError.message);
+      .catch((err) => {
+        if (err.response.status == 401) {
+          message.error('Wrong credentials: make sure your password is correct');
+        } else {
+          message.error(err.response.data.message);
         }
       }).then(()=>{
         setLoading(false);
       });
   };
-
-  const handleRedirect = () => {
-    return <Redirect to="/register" />
-  }
 
   const layout = {
     wrapperCol: { span: 24 }

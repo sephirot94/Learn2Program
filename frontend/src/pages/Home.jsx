@@ -1,9 +1,5 @@
-import { lazy, Suspense, useEffect } from 'react';
-import { Switch, Route, useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga';
 import { Layout } from 'antd';
-
-import Sidebar from '../components/sidebar/Sidebar';
+import Sidebar  from '../components/Sidebar';
 import Header from '../components/Header';
 
 
