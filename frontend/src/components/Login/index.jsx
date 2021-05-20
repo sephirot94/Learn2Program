@@ -21,6 +21,7 @@ const LoginForm = (props) => {
     LoginApi.Login(values)
       .then((session) => {
         const user = {
+          id: parseInt(session.data.id, 10),
           username: session.data.username,
           email :   session.data.email
         };

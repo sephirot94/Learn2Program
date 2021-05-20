@@ -16,6 +16,8 @@ const Auth = {
 
   logUserIn(user) {
     this.isAuthenticated = true;
+    localStorage.setItem('id', user.id)
+    localStorage.setItem('username', user.username)
     return localStorage.setItem(LOGGED_USER_KEY, JSON.stringify(user));
   },
 
@@ -26,18 +28,11 @@ const Auth = {
     if (loggedUser && !sessionExpired(loggedUser.expiration)) {
       return loggedUser;
     }
-    Auth.logUserOut();
     return null;
   },
 
   logUserOut() {
     return localStorage.removeItem(LOGGED_USER_KEY);
-  },
-
-  getUserToken() {
-    return localStorage.getItem(LOGGED_USER_KEY)
-      ? JSON.parse(localStorage.getItem(LOGGED_USER_KEY)).token
-      : '';
   },
 
   getUsername() {

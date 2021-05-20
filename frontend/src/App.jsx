@@ -2,6 +2,7 @@ import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 
 import Auth from './utils/Auth';
 
+import Course from './pages/Course'
 import Home from './pages/Home';
 import Login from './pages/Login';
 import RecoverPassword from './pages/RecoverPassword.jsx'
@@ -25,6 +26,10 @@ const App = () => {
 
         <PrivateRoute exact path="/home">
           <Home />
+        </PrivateRoute>
+
+        <PrivateRoute exact path="/courses">
+          <Course />
         </PrivateRoute>
         
       </Switch>
